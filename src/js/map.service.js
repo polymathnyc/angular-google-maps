@@ -1,6 +1,6 @@
 var app = angular.module('app');
 
-app.service('sampleService', ['$http','$q','$log', function($http, $q) {
+app.service('mapService', ['$http','$q','$log', function($http, $q) {
     'use strict';
 
     var service = {};
@@ -12,7 +12,7 @@ app.service('sampleService', ['$http','$q','$log', function($http, $q) {
         var deferred = $q.defer(),
             url;
 
-        url = 'data/sample.json';
+        url = 'data/mapstyles.json';
 
         $http.get(url)
             .success(function(response){

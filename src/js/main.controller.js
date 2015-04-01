@@ -1,7 +1,7 @@
 (function ( window, document, undefined ) {
 'use strict';
 
-var MainController = function ($scope, sampleService) {
+var MainController = function ($scope, mapService) {
 
 
     $scope.data = {};
@@ -15,7 +15,7 @@ var MainController = function ($scope, sampleService) {
     };
 
     $scope.fetchMapData = function() {
-	    sampleService.fetchData()
+	    mapService.fetchData()
 	        .then(function (result) {
 
 	        	$scope.data.allMapStyles = result;
