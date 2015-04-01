@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- build:process -->
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>" />
+    <meta name="viewport" content="<%= viewport %>" />
+    <!-- /build -->
+    <!-- compile:style app -->
+        <!-- build:style vendor --><!-- /build -->
+        <!-- build:style app --><!-- /build -->
+    <!-- /compile -->
+    <!-- compile:script modernizr optional -->
+        <!-- build:script modernizr optional --><!-- /build -->
+    <!-- /compile -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+</head>
+
+<body ng-app="app">
+
+<div class="blank-main" ng-controller="MainController">
+
+    <div class="map-component">
+
+        <h1>Map Component</h1>
+
+        <ul class="map-styles">
+            <li ng-repeat="(key, value) in data.allMapStyles" style="background:{{value[0].baseColor}}">
+                <a ng-click="data.getTheme(key)">{{key}}</a>
+            </li>
+        </ul>
+
+        <div class="map-canvas" id="mapCanvas"></div>
+
+    </div>
+
+</div>
+    <!-- compile:script app -->
+    <!-- build:script vendor --><!-- /build -->
+    <!-- build:script app --><!-- /build -->
+    <!-- /compile -->
+</body>
+</html>

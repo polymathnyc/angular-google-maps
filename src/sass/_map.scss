@@ -1,0 +1,28 @@
+.map-component {
+	text-align: center; 
+
+	.map-canvas {
+		width: 900px;
+		height: 600px;
+		margin: 20px auto;
+	}
+
+	.map-styles {
+		list-style-type: none;
+		margin: 20px 0;
+
+		li {
+			display: inline-block;
+			width: auto;
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: bold;
+
+			a {
+				padding: 20px;
+				display: block;
+			}
+		}
+	}
+
+}

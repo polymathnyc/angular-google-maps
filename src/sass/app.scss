@@ -1,0 +1,21 @@
+@import "meyer-reset/_reset.scss";
+@import "utilities/_placeholders.scss";
+@import "utilities/_mixins.scss";
+@import "utilities/_angular.scss";
+
+@import "_main.scss";
+@import "_map.scss";
+
+
+html, body {
+    @extend %fullscreen;
+    background-color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 1.4em;
+	font-weight: bold;
+	margin-top: 20px;
+}

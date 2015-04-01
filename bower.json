@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "description": "A boilerplate for Angular projects.",
+  "version": "1.0.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build",
+    "vendor"
+  ],
+  "dependencies": {
+    "angular": "~1.2.27",
+      "angular-mocks": "~1.2.27"
+  },
+  "resolutions": {
+    "angular": "~1.2.27"
+  }
+}

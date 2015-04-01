@@ -1,0 +1,14 @@
+{
+
+    "tulsa" : {
+    	"lat" : 36.1314,
+    	"lng" : 95.9372,
+    	"lyric" : "lorem ipsem"
+    },
+    "lake eufala" : {
+    	"lat" : 35.2808,
+    	"lng" : 95.5297,
+    	"lyric" : "lorem ipsem"
+    }
+
+}

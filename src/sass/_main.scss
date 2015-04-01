@@ -1,0 +1,12 @@
+.blank-main {
+    background-color: #FFF;
+    color: #000;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+
+    &__video {
+        height: 100%;
+    }
+}
